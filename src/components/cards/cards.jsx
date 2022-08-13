@@ -1,14 +1,25 @@
 import PropTypes from "prop-types"
-
-function Card () {
+import './cards.css'
+import lanche1 from '../../assets/lanche1.jpg'
+export const Card = ({
+    titulo = 'Sem titulo informado',
+    foto = lanche1,
+    descricao,
+    valor,
+    preparo
+}) => {
     return (
-        <div>
-            <h1></h1>
-            <img src=""/>
+        <main className="main">
+            <h3>{titulo}</h3>
+            <img src= {foto} width= {300} alt="lanche 1"/>
+            <p className="descricao">{descricao}</p>
+            <p>{valor}</p>
+            <p>{preparo}</p>
             
             
-            
-        </div>
+        </main>
+     
+
     );
 };
 
@@ -17,6 +28,8 @@ Card.propTypes  = {
     foto: PropTypes.any.isRequired,
     valor: PropTypes.number.isRequired,
     tempo: PropTypes.number.isRequired,
-}
+    preparo: PropTypes.number.isRequired
+};
 
-export default Card
+
+
