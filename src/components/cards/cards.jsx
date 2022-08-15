@@ -1,34 +1,34 @@
 import PropTypes from "prop-types"
 import './cards.css'
-import lanche1 from '../../assets/lanche1.jpg'
-export const Card = ({
-    titulo = 'Sem titulo informado',
-    foto = lanche1,
-    descricao,
-    valor,
-    preparo
-}) => {
-    return (
-        <main className="main">
-            <h3>{titulo}</h3>
-            <img src= {foto} width= {300} alt="lanche 1"/>
-            <p className="descricao">{descricao}</p>
-            <p>{valor}</p>
-            <p>{preparo}</p>
-            
-            
-        </main>
-     
 
-    );
+
+export const Card = ({ produto }) => {
+    <div className="">
+        <img className="" src= {produto.img} alt="Foto prato" height={200} />
+
+        <div className="">
+            <h2 className="">{produto.nome}</h2>
+            <p className="">{produto.descricao}</p>
+        </div>
+
+        <div className="">
+            <strong>
+            {`R$ ${produto.valor.toFixed(2).replace('.', `,`)}`}
+            </strong>
+
+            <p>{produto.tempoPreparo}</p> 
+        </div>
+    </div>
 };
 
 Card.propTypes  = {
-    nome: PropTypes.string.isRequired , 
-    foto: PropTypes.any.isRequired,
-    valor: PropTypes.number.isRequired,
-    tempo: PropTypes.number.isRequired,
-    preparo: PropTypes.number.isRequired
+    produto: PropTypes.shape ({
+        nome: PropTypes.string.isRequired , 
+        img: PropTypes.any,
+        descricao : PropTypes.string.isRequired,
+        valor: PropTypes.number.isRequired,
+        tempoPreparo: PropTypes.string.isRequired
+    })  
 };
 
 

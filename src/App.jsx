@@ -1,44 +1,37 @@
-import { Card } from "./components/cards/cards" 
-import { Navbar }  from './components/navbar/navbar'
-import { Rodape } from './components/footer/rodape'
-// import lanche1 from '../../assets/lanche1.jpg'
-// import lanche2 from '../../assets/lanche2.jpg'
-// import lanche3 from '../../assets/lanche3.jpg'
-import "./App.css";
+import { Secao } from './components/Secao/secao' 
+import {Rodape} from './components/footer/rodape'
+import { Header } from './components/header/header'
+import produtos from './components/produtos/produtos.json'
+import "./App.module.css";
+
 
 function App() {
+  const subSecoesEntradas = new Set(produtos.entradas.map((p) => p.subSecao));
+  const subSecoesPrincipais = new Set(produtos.principais.map((p) => p.subSecao));
+
+  
   return (
-    <div className="conteiner">
-      <Navbar/>,
+    <div className="">
+      <Header/>
+      <main className="">
+        <Secao
+          nome = "Entradas"
+          produtos = {produtos.entradas}
+          subSecoes={Array.from(subSecoesEntradas)}
+        />,
+        <Secao
+          nome = "Principais"
+          produtos = {produtos.principais}
+          subSecoes = {Array.from(subSecoesPrincipais)}
+        />,
+        <Secao nome='Bebidas' produtos={produtos.bebidas}/>
+
+
+      </main>
+
+    
       
-      <section className="secao">
-        <Card 
-          titulo = 'X-Tudo'
-          descricao = 'lasckas asdasdkaskc asckaskcsa sacasjcsac asc scasi'
-          // foto = {lanche1}
-          valor = {35}
-          preparo = {15}
-        />
-
-        <Card 
-          titulo = 'X-Bacon'
-          descricao = 'lasckas asdasdkaskc asckaskcsa sacasjcsac asc scasi'
-          // foto = {lanche2}
-          valor = {35}
-          preparo = {15}
-        />
-
-        <Card 
-          titulo = 'X-Salada'
-          descricao = 'lasckas asdasdkaskc asckaskcsa sacasjcsac asc scasi'
-          // foto = {lanche3}
-          valor = {35}
-          preparo = {15}
-        />
-      </section>,
       <Rodape/>
-     
-
 
     </div>
     
