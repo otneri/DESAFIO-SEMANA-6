@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types'
 import { Cardapio } from '../cardapio/cardapio'
 
+
 export const Subsecoes = ({ produtos, subSecao }) => {
     const produtosFiltrados = produtos.filter((prod) => prod.subSecao === subSecao);
-    console.log(produtosFiltrados)
-
+    
+    
+    
     return (
         <div className=''>
             <div>

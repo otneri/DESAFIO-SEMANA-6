@@ -7,7 +7,7 @@
         "descricao": "Mix de folhas coloridas, tomate cereja,croutôns, palmito e lascas de jacaré salteadas, regadas ao molho balsâmico, oliva e mel.",
         "valor": 49,
         "tempoPreparo": "10 min",
-        "subSeção" : "entradas"
+        "subSecao" : "entradas"
       },
       {
         "id": 2,
@@ -16,7 +16,7 @@
         "descricao": "Mix de folhas, muzzarela de búfala e tomates secos com pequenos pedaços de faisão grelhados ao vinagrete.",
         "valor": 65,
         "tempoPreparo": "15 min",
-        "subSeção" : "entradas"
+        "subSecao" : "entradas"
         
       },
       {
@@ -26,7 +26,7 @@
         "descricao": "Tradicional sopa de cebola à francesa gratinada com pão e queijo gruyerè.",
         "valor": 64,
         "tempoPreparo": "20 min",
-        "subSeção" : "entradas"
+        "subSecao" : "entradas"
       }
 
 
@@ -42,7 +42,7 @@
         "descricao": "Ostentosa porção de copa lombo de porco Duroc marinada em tempero clássico La Caceria escoltado de aveludado purê de maçãs e abóbora cabotia assada em manteiga de mix de pimenta.",
         "valor": 172,
         "tempoPreparo": "50 min",
-        "subSeção" : "principais"
+        "subSecao" : "principais"
          
       },
 
@@ -53,7 +53,7 @@
         "descricao": "Champignon fresco gigante produzidos na Linha Ávila no interior de Gramado, recheado com creme de javali, gratinado com queijo parmesão.",
         "valor": 65,
         "tempoPreparo": "30 min",
-        "subSeção" : "principais"
+        "subSecao" : "principais"
         
         
       },
@@ -64,7 +64,7 @@
         "descricao": "Figos naturais recheados com queijo de cabra e presunto parma, gratinados com queijo parmesão. Acompanha salada verde.",
         "valor": 55,
         "tempoPreparo": "25 min",
-        "subSeção" : "principais"
+        "subSecao" : "principais"
         
       }
 
@@ -77,7 +77,7 @@
             "descricao": "Carré grelhado com delicado molho de três pimentas, batata suíça e banana caramelada.",
             "valor": 169,
             "tempoPreparo": "50 min",
-            "subSeção" : "bebidas"
+            "subSecao" : "bebidas"
                 
         }, 
         {
@@ -87,7 +87,7 @@
             "descricao": "Medalhão de filé mignon acompanhado de massa farfalle ao molho de queijos.",
             "valor": 142,
             "tempoPreparo": "40 min",
-            "subSeção" : "bebidas"
+            "subSecao" : "bebidas"
              
         },
         {
@@ -97,7 +97,7 @@
             "descricao": "Aveludada brandade de bacalhau servida em crocante de sementes, delicada base de azeite de rúcula e suas folhas com farofinha de azeitonas.",
             "valor": 65,
             "tempoPreparo": "30 min",
-            "subSeção" : "bebidas"
+            "subSecao" : "bebidas"
             
             
         } 

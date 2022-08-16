@@ -1,14 +1,15 @@
 import { Secao } from './components/Secao/secao' 
 import {Rodape} from './components/footer/rodape'
 import { Header } from './components/header/header'
-import produtos from './components/produtos/produtos.json'
+import produtos from './produtos/produtos.json'
 import "./App.module.css";
 
 
 function App() {
   const subSecoesEntradas = new Set(produtos.entradas.map((p) => p.subSecao));
   const subSecoesPrincipais = new Set(produtos.principais.map((p) => p.subSecao));
-
+  console.log(produtos);
+  console.log(produtos.bebidas)
   
   return (
     <div className="">
@@ -18,12 +19,12 @@ function App() {
           nome = "Entradas"
           produtos = {produtos.entradas}
           subSecoes={Array.from(subSecoesEntradas)}
-        />,
+        />
         <Secao
           nome = "Principais"
           produtos = {produtos.principais}
           subSecoes = {Array.from(subSecoesPrincipais)}
-        />,
+        />
         <Secao nome='Bebidas' produtos={produtos.bebidas}/>
 
 

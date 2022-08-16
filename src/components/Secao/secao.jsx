@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Cardapio } from '../cardapio/cardapio'
 import { Subsecoes } from '../subsecoes/subsecoes'
 
-
 export const Secao = ({nome , produtos,  subSecoes}) => {
     return (
         <div className=''>    
@@ -25,3 +24,4 @@ Secao.propTypes = {
     produtos : PropTypes.array.isRequired,
     subsecoes : PropTypes.arrayOf(PropTypes.string)
 }
+
